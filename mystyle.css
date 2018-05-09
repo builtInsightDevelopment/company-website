@@ -1,0 +1,8 @@
+/*styles*/
+
+#logo{
+    height: 60px;
+    width: 200px;
+    background-image: url("/assets/logo.svg");
+    background-size: contain;
+}
