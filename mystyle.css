@@ -1,8 +1,12 @@
 /*styles*/
+body{
+    position: relative;
+    text-align: center;
+}
 
 #logo{
-    height: 60px;
-    width: 200px;
+    height: 90px;
+    width: 300px;
     background-image: url("/assets/logo.svg");
-    background-size: contain;
-}
+    margin: 0 auto;
+} 
