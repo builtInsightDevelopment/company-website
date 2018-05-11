@@ -15,17 +15,21 @@
 
 
   <script>
-    fetch("http://localhost:3000", {
+    fetch("/api", {
       body: "testing this out!",
       headers: {
         'Content-Type': 'text/plain'
       },
-      crossDomain: true,      
+      crossDomain: true,
       mode: 'cors',
       method: "POST"
     }).then(response => response.text())
-    .then(text => console.log(text))
-    .catch(error => console.log(error));
+      .then(text => console.log(text))
+      .catch(error => console.log(error));
+
+    fetch("/api").then(response => response.text()).then(text => console.log(text));
+
+
   </script>
 
 
