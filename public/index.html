@@ -4,12 +4,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
+
 <body style="font-family: 'Merriweather Sans', sans-serif;">
 
-  <div id="logo"></div>    
+  <div id="logo"></div>
 
   <h1>Built Insight Development</h1>
   <div>Updates coming soon!</div>
   <div>copyright 2018 Built Insight Development</div>
+
+
+  <script>
+    fetch("http://localhost:3000", {
+      body: "testing this out!",
+      headers: {
+        'Content-Type': 'text/plain'
+      },
+      crossDomain: true,      
+      mode: 'cors',
+      method: "POST"
+    }).then(response => response.text())
+    .then(text => console.log(text))
+    .catch(error => console.log(error));
+  </script>
+
 
 </body>
